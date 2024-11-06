@@ -34,7 +34,7 @@ import com.android.wallpaper.picker.preview.ui.util.DefaultImageEffectDialogUtil
 import com.android.wallpaper.picker.preview.ui.util.ImageEffectDialogUtil
 import com.android.wallpaper.util.converter.DefaultWallpaperModelFactory
 import com.android.wallpaper.util.converter.WallpaperModelFactory
-import co.aospa.android.customization.module.ParanoidThemePickerInjector
+import org.fortune.android.customization.module.FortuneThemePickerInjector
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -46,7 +46,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class ThemePickerAppModule {
-    @Binds @Singleton abstract fun bindInjector(impl: ParanoidThemePickerInjector): CustomizationInjector
+    @Binds @Singleton abstract fun bindInjector(impl: FortuneThemePickerInjector): CustomizationInjector
 
     @Binds
     @Singleton

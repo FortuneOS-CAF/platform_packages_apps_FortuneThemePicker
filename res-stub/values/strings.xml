@@ -11,7 +11,7 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">AOSPA Colors</string>
+    <string name="app_name">Fortune Colors</string>
 
     <string name="bundle1_color_name">Carbon</string>
     <string name="bundle2_color_name">Paper</string>

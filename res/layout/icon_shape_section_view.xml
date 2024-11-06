@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<co.aospa.android.customization.picker.iconshape.IconShapeSectionView
+<org.fortune.android.customization.picker.iconshape.IconShapeSectionView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:paddingBottom="@dimen/section_bottom_padding"
@@ -41,4 +41,4 @@
             android:layout_gravity="center"/>
     </FrameLayout>
 
-</co.aospa.android.customization.picker.iconshape.IconShapeSectionView>
+</org.fortune.android.customization.picker.iconshape.IconShapeSectionView>

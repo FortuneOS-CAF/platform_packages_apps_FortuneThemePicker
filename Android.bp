@@ -1,17 +1,18 @@
 //
 // Copyright (C) 2022 StatiXOS
 // Copyright (C) 2022 Paranoid Android
+// Copyright (C) 2024 FortuneOS
 // SPDX-License-Identifer: Apache-2.0
 //
 
 package {
-    default_applicable_licenses: ["packages_apps_Paranoid_ThemePicker_license"],
+    default_applicable_licenses: ["packages_apps_Fortune_ThemePicker_license"],
 }
 
 // Added automatically by a large-scale-change
 // See: http://go/android-license-faq
 license {
-    name: "packages_apps_Paranoid_ThemePicker_license",
+    name: "packages_apps_Fortune_ThemePicker_license",
     visibility: [":__subpackages__"],
     license_kinds: [
         "SPDX-license-identifier-Apache-2.0",
@@ -22,26 +23,26 @@ license {
 }
 
 java_library {
-    name: "ParanoidThemePickerOverridesLib",
+    name: "FortuneThemePickerOverridesLib",
     srcs: [
         "src_override/**/*.java",
         "src_override/**/*.kt",
     ],
     libs: [
         "hilt_android",
-        "ParanoidThemePickerLib",
+        "FortuneThemePickerLib",
     ],
 }
 
 filegroup {
-    name: "ParanoidThemePicker_Manifest",
+    name: "FortuneThemePicker_Manifest",
     srcs: [
         "AndroidManifest.xml",
     ],
 }
 
 android_library {
-    name: "ParanoidThemePickerLib",
+    name: "FortuneThemePickerLib",
 
     static_libs: [
         "guava",
@@ -74,12 +75,12 @@ android_library {
 }
 
 java_defaults {
-    name: "ParanoidThemePicker_defaults",
+    name: "FortuneThemePicker_defaults",
     static_libs: [
         "ThemePickerLib",
-        "ParanoidThemePickerLib",
+        "FortuneThemePickerLib",
         "ThemePickerOverridesLib",
-        "ParanoidThemePickerOverridesLib",
+        "FortuneThemePickerOverridesLib",
         "hilt_android",
     ],
 
@@ -105,8 +106,8 @@ java_defaults {
 // Build app code.
 //
 android_app {
-    name: "ParanoidThemePicker",
-    defaults: ["ParanoidThemePicker_defaults"],
+    name: "FortuneThemePicker",
+    defaults: ["FortuneThemePicker_defaults"],
 
     platform_apis: true,
     manifest: "AndroidManifest.xml",
@@ -115,7 +116,7 @@ android_app {
     required: [
         "privapp_whitelist_com.android.wallpaper",
         "default_permissions_com.android.wallpaper",
-        "ParanoidColorStub",
+        "FortuneColorStub",
     ],
 }
 
@@ -136,7 +137,7 @@ prebuilt_etc_xml {
 }
 
 android_app {
-    name: "ParanoidColorStub",
+    name: "FortuneColorStub",
     manifest: "AndroidManifest-Stub.xml",
     resource_dirs: ["res-stub"],
 

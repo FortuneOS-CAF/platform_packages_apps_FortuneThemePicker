@@ -29,7 +29,7 @@
         android:requiredForAllUsers="true"
         android:restoreAnyVersion="true"
         android:supportsRtl="true"
-        android:name="co.aospa.android.customization.picker.ParanoidCustomizationPickerApplication"
+        android:name="org.fortune.android.customization.picker.FortuneCustomizationPickerApplication"
         android:theme="@style/CustomizationTheme">
         <activity
             tools:node="replace"
@@ -58,7 +58,7 @@
             android:exported="false"/>
 
         <activity-alias
-            android:name="co.aospa.android.customization.picker.ParanoidCustomizationPickerActivity"
+            android:name="org.fortune.android.customization.picker.FortuneCustomizationPickerActivity"
             android:targetActivity="com.android.wallpaper.picker.TrampolinePickerActivity"
             android:label="@string/app_name"
             android:exported="true">
